@@ -123,9 +123,9 @@
     #toast {
       position: fixed;
       left: 50%;
-      bottom: 1.4rem;
+      top: 5.4rem;
       z-index: 70;
-      transform: translateX(-50%) translateY(10px);
+      transform: translateX(-50%) translateY(-8px);
       opacity: 0;
       pointer-events: none;
       border-radius: 999px;
@@ -206,7 +206,7 @@
           <img src="x.png" alt="" class="h-full w-full object-cover" />
         </a>
         <a
-          href="https://argus.world/token/TBA"
+          href="https://argus.world/token/0xd9e2e72b67fd25f735412761bb6904b54cc1ad76"
           target="_blank"
           rel="noopener noreferrer"
           class="btn-buy hidden rounded-full bg-gradient-to-r from-violet-500 via-indigo-500 to-blue-500 px-4 py-2 text-sm font-semibold text-white sm:inline-flex"
@@ -221,7 +221,7 @@
             <a data-close-menu href="#why" class="block rounded-xl px-3 py-2 text-sm hover:bg-white/10">Why Arc</a>
             <a data-close-menu href="#how-to-buy" class="block rounded-xl px-3 py-2 text-sm hover:bg-white/10">How to Buy</a>
             <a data-close-menu href="#chart" class="block rounded-xl px-3 py-2 text-sm hover:bg-white/10">Chart</a>
-            <a data-close-menu href="https://argus.world/token/TBA" target="_blank" rel="noopener noreferrer" class="mt-1 block rounded-xl bg-gradient-to-r from-violet-500 to-blue-500 px-3 py-2 text-center text-sm font-semibold">Buy Now</a>
+            <a data-close-menu href="https://argus.world/token/0xd9e2e72b67fd25f735412761bb6904b54cc1ad76" target="_blank" rel="noopener noreferrer" class="mt-1 block rounded-xl bg-gradient-to-r from-violet-500 to-blue-500 px-3 py-2 text-center text-sm font-semibold">Buy Now</a>
           </div>
         </details>
       </div>
@@ -230,8 +230,8 @@
 
   <main>
     <section class="relative overflow-hidden">
-      <div class="pointer-events-none absolute -left-8 top-16 hidden lg:block" aria-hidden="true">
-        <svg class="floaty h-24 w-24 opacity-80" viewBox="0 0 80 80">
+      <div class="pointer-events-none absolute left-6 top-24 hidden 2xl:block" aria-hidden="true">
+        <svg class="floaty h-20 w-20 opacity-90" viewBox="0 0 80 80">
           <defs>
             <linearGradient id="coinA" x1="0" y1="0" x2="1" y2="1">
               <stop offset="0" stop-color="#c4b5fd" />
@@ -244,8 +244,8 @@
           <text x="40" y="49" text-anchor="middle" font-size="30" fill="white" font-family="Syne, sans-serif" font-weight="800">$</text>
         </svg>
       </div>
-      <div class="pointer-events-none absolute -right-4 bottom-10 hidden lg:block" aria-hidden="true">
-        <svg class="floaty h-28 w-28 opacity-70" style="animation-delay: -2s" viewBox="0 0 80 80">
+      <div class="pointer-events-none absolute bottom-16 right-6 hidden 2xl:block" aria-hidden="true">
+        <svg class="floaty h-24 w-24 opacity-80" style="animation-delay: -2s" viewBox="0 0 80 80">
           <circle cx="40" cy="40" r="36" fill="url(#coinA)" />
           <circle cx="40" cy="40" r="27" fill="none" stroke="white" stroke-opacity="0.75" stroke-width="2" />
           <text x="40" y="48" text-anchor="middle" font-size="18" fill="white" font-family="Syne, sans-serif" font-weight="800">BB</text>
@@ -274,8 +274,15 @@
 
           <div class="mt-8 flex max-w-xl flex-col gap-2 rounded-2xl border border-white/15 bg-black/50 p-2 pl-4 backdrop-blur-xl sm:flex-row sm:items-center">
             <div class="min-w-0 flex-1 py-1">
-              <p class="text-[10px] font-semibold uppercase tracking-[0.22em] text-violet-200">Contract</p>
-              <p id="ca" class="truncate font-mono text-sm text-white sm:text-base">TBA</p>
+              <label for="ca" class="text-[10px] font-semibold uppercase tracking-[0.22em] text-violet-200">Contract</label>
+              <input
+                id="ca"
+                readonly
+                value="0xd9e2e72b67fd25f735412761bb6904b54cc1ad76"
+                spellcheck="false"
+                aria-label="Contract address"
+                class="w-full appearance-none border-0 bg-transparent p-0 font-mono text-sm text-white outline-none sm:text-base"
+              />
             </div>
             <button
               type="button"
@@ -286,7 +293,7 @@
 
           <div class="mt-6 flex flex-wrap items-center gap-3">
             <a
-              href="https://argus.world/token/TBA"
+              href="https://argus.world/token/0xd9e2e72b67fd25f735412761bb6904b54cc1ad76"
               target="_blank"
               rel="noopener noreferrer"
               class="btn-buy inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-violet-500 via-indigo-500 to-blue-500 px-6 py-3 text-sm font-semibold text-white"
@@ -297,7 +304,7 @@
               </svg>
             </a>
             <a
-              href="https://dexscreener.com/arc/TBA"
+              href="https://dexscreener.com/arc/0xd9e2e72b67fd25f735412761bb6904b54cc1ad76"
               target="_blank"
               rel="noopener noreferrer"
               class="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-6 py-3 text-sm font-semibold backdrop-blur-md transition hover:border-sky-300/50 hover:bg-white/15"
@@ -346,7 +353,7 @@
               Bitcoin really is better on Arc.
             </p>
             <a
-              href="https://argus.world/token/TBA"
+              href="https://argus.world/token/0xd9e2e72b67fd25f735412761bb6904b54cc1ad76"
               target="_blank"
               rel="noopener noreferrer"
               class="btn-buy mt-5 flex w-full items-center justify-center rounded-full bg-gradient-to-r from-violet-500 via-indigo-500 to-blue-500 px-6 py-3 text-sm font-semibold"
@@ -447,12 +454,12 @@
           <div class="flex flex-col gap-3 border-t border-white/10 px-4 py-4 sm:flex-row sm:items-center sm:justify-between sm:px-6">
             <div class="flex min-w-0 items-center gap-3">
               <p class="shrink-0 text-[10px] font-semibold uppercase tracking-[0.2em] text-violet-200">CA</p>
-              <p class="truncate font-mono text-sm">TBA</p>
+              <p class="truncate font-mono text-sm">0xd9e2e72b67fd25f735412761bb6904b54cc1ad76</p>
               <button type="button" data-copy class="shrink-0 rounded-full border border-white/15 bg-white/10 px-3 py-1 text-xs font-semibold transition hover:bg-white/15">Copy</button>
             </div>
             <div class="flex flex-wrap gap-2">
-              <a href="https://argus.world/token/TBA" target="_blank" rel="noopener noreferrer" class="btn-buy inline-flex rounded-full bg-gradient-to-r from-violet-500 via-indigo-500 to-blue-500 px-5 py-2.5 text-sm font-semibold">Buy Now</a>
-              <a href="https://dexscreener.com/arc/TBA" target="_blank" rel="noopener noreferrer" class="inline-flex rounded-full border border-white/20 px-5 py-2.5 text-sm font-semibold transition hover:bg-white/10">Chart</a>
+              <a href="https://argus.world/token/0xd9e2e72b67fd25f735412761bb6904b54cc1ad76" target="_blank" rel="noopener noreferrer" class="btn-buy inline-flex rounded-full bg-gradient-to-r from-violet-500 via-indigo-500 to-blue-500 px-5 py-2.5 text-sm font-semibold">Buy Now</a>
+              <a href="https://dexscreener.com/arc/0xd9e2e72b67fd25f735412761bb6904b54cc1ad76" target="_blank" rel="noopener noreferrer" class="inline-flex rounded-full border border-white/20 px-5 py-2.5 text-sm font-semibold transition hover:bg-white/10">Chart</a>
             </div>
           </div>
           <p class="overflow-hidden whitespace-nowrap border-t border-white/10 px-4 py-2 font-mono text-[10px] uppercase tracking-[0.35em] text-white/35">
@@ -468,10 +475,10 @@
           <div>
             <p class="text-[11px] font-semibold uppercase tracking-[0.28em] text-sky-200">Chart</p>
             <h2 class="mt-3 font-display text-4xl font-extrabold tracking-tight sm:text-5xl">Watch the blue candle.</h2>
-            <p class="mt-3 max-w-xl text-indigo-100/75">$BBTC on Arc, embedded from Dexscreener. Bitcoin really is better on Arc — the chart is just the receipt.</p>
+            <p class="mt-3 max-w-xl text-indigo-100/75">$BBTC on Arc, embedded from Dexscreener. The pair stays on 0xd9e2e72b67fd25f735412761bb6904b54cc1ad76 until the contract is live. Bitcoin really is better on Arc — the chart is just the receipt.</p>
           </div>
           <a
-            href="https://dexscreener.com/arc/TBA"
+            href="https://dexscreener.com/arc/0xd9e2e72b67fd25f735412761bb6904b54cc1ad76"
             target="_blank"
             rel="noopener noreferrer"
             class="inline-flex w-fit items-center gap-2 rounded-full border border-white/20 bg-white/10 px-5 py-2.5 text-sm font-semibold backdrop-blur-md transition hover:border-sky-300/50"
@@ -490,7 +497,7 @@
           </div>
           <iframe
             title="Better Bitcoin chart on Dexscreener"
-            src="https://dexscreener.com/arc/TBA?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=0&chartType=usd&interval=15"
+            src="https://dexscreener.com/arc/0xd9e2e72b67fd25f735412761bb6904b54cc1ad76?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=0&chartType=usd&interval=15"
             class="h-[440px] w-full border-0 bg-[#0b1020] md:h-[640px]"
             loading="lazy"
           ></iframe>
@@ -506,8 +513,8 @@
         </h2>
         <p class="mx-auto mt-4 max-w-lg text-indigo-100/80">Bring Arc USDC. Leave with $BBTC. Tell the timeline.</p>
         <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
-          <a href="https://argus.world/token/TBA" target="_blank" rel="noopener noreferrer" class="btn-buy inline-flex rounded-full bg-gradient-to-r from-violet-500 via-indigo-500 to-blue-500 px-7 py-3 text-sm font-semibold">Buy Now</a>
-          <a href="https://dexscreener.com/arc/TBA" target="_blank" rel="noopener noreferrer" class="inline-flex rounded-full border border-white/25 bg-black/30 px-7 py-3 text-sm font-semibold transition hover:bg-black/50">Chart</a>
+          <a href="https://argus.world/token/0xd9e2e72b67fd25f735412761bb6904b54cc1ad76" target="_blank" rel="noopener noreferrer" class="btn-buy inline-flex rounded-full bg-gradient-to-r from-violet-500 via-indigo-500 to-blue-500 px-7 py-3 text-sm font-semibold">Buy Now</a>
+          <a href="https://dexscreener.com/arc/0xd9e2e72b67fd25f735412761bb6904b54cc1ad76" target="_blank" rel="noopener noreferrer" class="inline-flex rounded-full border border-white/25 bg-black/30 px-7 py-3 text-sm font-semibold transition hover:bg-black/50">Chart</a>
           <a href="https://x.com/BetterBitcoinX" target="_blank" rel="noopener noreferrer" aria-label="Better Bitcoin on X" class="grid h-12 w-12 place-items-center overflow-hidden rounded-full border border-white/20">
             <img src="x.png" alt="" class="h-full w-full object-cover" />
           </a>
@@ -540,39 +547,42 @@
     const toast = document.getElementById("toast");
     let toastTimer;
 
-    async function copyText(value) {
-      if (navigator.clipboard && window.isSecureContext) {
-        await navigator.clipboard.writeText(value);
-        return;
+    async function copyText() {
+      const value = caEl.value.trim();
+      caEl.focus();
+      caEl.select();
+      try {
+        if (document.execCommand("copy")) return;
+      } catch (error) {
+        caEl.focus();
+        caEl.select();
       }
-      const field = document.createElement("textarea");
-      field.value = value;
-      field.setAttribute("readonly", "");
-      field.style.position = "fixed";
-      field.style.left = "-9999px";
-      document.body.appendChild(field);
-      field.select();
-      const ok = document.execCommand("copy");
-      field.remove();
-      if (!ok) throw new Error("copy failed");
+      if (!(navigator.clipboard && window.isSecureContext)) {
+        throw new Error("copy failed");
+      }
+      await Promise.race([
+        navigator.clipboard.writeText(value),
+        new Promise((_, reject) => setTimeout(() => reject(new Error("copy failed")), 700)),
+      ]);
     }
 
     document.querySelectorAll("[data-copy]").forEach((button) => {
       button.addEventListener("click", async () => {
-        const value = caEl.textContent.trim();
         const previous = button.textContent;
         try {
-          await copyText(value);
+          await copyText();
           button.textContent = "Copied";
           toast.textContent = "Contract copied";
         } catch (error) {
-          toast.textContent = "Couldn’t copy — select the CA";
+          caEl.focus();
+          caEl.select();
+          toast.textContent = "CA highlighted — press Ctrl+C";
         }
         toast.classList.add("show");
         clearTimeout(toastTimer);
         toastTimer = setTimeout(() => {
           toast.classList.remove("show");
-          button.textContent = previous === "Copied" ? "Copy" : previous;
+          button.textContent = previous;
         }, 1600);
       });
     });
